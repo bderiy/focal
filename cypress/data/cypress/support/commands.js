@@ -23,11 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-// Import the function from dataParser.js
-const { splitAndCombineDateTime } = require('./dataParser');
-
-// Register the function as a custom Cypress command (if necessary)
-Cypress.Commands.add('parseDataString', (dataString) => {
-  return parseDataString(dataString);
-});
